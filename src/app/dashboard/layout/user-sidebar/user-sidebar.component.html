@@ -1,3 +1,29 @@
-<p>
-  user-sidebar works!
-</p>
+<div class="wrapper">
+  <!-- Sidebar Holder -->
+  <nav id="sidebar">
+      <div class="sidebar-header">
+          <h3>USER</h3>
+      </div>
+    
+      <ul class="list-unstyled components">
+          <p>ADIGUN ADEFISOLA</p>
+      
+          <li class ="">
+            <a routerLink="/user/view-profile">View profile</a>
+        </li>
+          <li class ="">
+            <a routerLink="/user/update-profile">Update profile</a>
+        </li>
+         
+      </ul>
+    
+      <ul class="list-unstyled CTAs">
+         
+          <li><a href="/home/login" class="article">Sign Out</a></li>
+      </ul>
+    </nav>
+    <div style="margin-left:40px">
+      <!--Dashboard content-->
+      <router-outlet></router-outlet>
+    </div>
+    </div>

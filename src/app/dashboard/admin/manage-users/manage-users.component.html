@@ -1,3 +1,44 @@
-<p>
-  manage-users works!
-</p>
+<div class="" style=" margin-left:20px; padding-top:2px; padding-bottom:28px;" >
+  
+    <h2>MANAGE REGISTERED USERS</h2>
+  </div>
+<div class="container-fluid">
+<table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Serial No</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Username</th>
+        <th>Phone No</th>
+        <th>Action</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>ADIGUN ADEFISOLA</td>
+        <td>fifirulez@yahoo.com</td>
+        <td>daboss_beatz</td>
+        <td>09087654654</td>
+        <td><a class="btn"  routerLink="admin/edit-user-profile"><i class="fa fa-pencil"></i></a>
+                              <a class="btn" (click)="deleteUser(user.id)"><i class="fa fa-trash"></i></a></td>
+      </tr>
+    </tbody>
+    <tbody>
+        <tr>
+          <td>2</td>
+          <td>BOlATITO OBADARE</td>
+          <td>fifirulez@yahoo.com</td>
+          <td>daboss_beatz</td>
+          <td>09087654654</td>
+          <td><a class="btn"  routerLink="admin/edit-user-profile"><i class="fa fa-pencil"></i></a>
+                                <a class="btn" (click)="deleteUser(user.id)"><i class="fa fa-trash"></i></a></td>
+        </tr>
+      </tbody>
+  </table>
+
+  
+</div>

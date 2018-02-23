@@ -1,3 +1,54 @@
-<p>
-  update-profile works!
-</p>
+<div class="" style=" padding-top:2px; padding-bottom:28px;" >
+  
+    <h2>ADIGUN ADEFISOLA's <small>PROFILE INFORMATION</small></h2>
+  </div>
+  <!--<app-alert></app-alert>-->
+  
+  <div class="container-fluid">
+    <form role="form" >
+      <div class="form-content">
+        <div class="form-group has-feedback" >
+          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          <input type="text" class="form-control input-underline input-lg"  placeholder="First Name" name="firstName" value="ADIGUN" required>
+          <div *ngIf="f.submitted && !firstName.valid" class="help-block">First Name is required</div>
+        </div>
+  
+        <div class="form-group has-feedback" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          <input type="text" class="form-control input-underline input-lg"  placeholder="Last Name" name="lastName"  value="ADEFISOLA" required>
+          <div *ngIf="f.submitted && !lastName.valid" class="help-block">Last Name is required</div>
+        </div>
+        
+          <div class="form-group has-feedback"  [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+          <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          <input type="email" class="form-control  input-underline input-lg" placeholder="Email address" name="email"  value="fifirulez@yahoo.com" disabled required>
+          <div *ngIf="f.submitted && !email_no.valid" class="help-block">Email is required</div>
+        </div>
+  
+        <div class="form-group has-feedback"  [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+            <span class="glyphicon glyphicon-phone-alt form-control-feedback"></span>
+          <input type="text" class="form-control  input-underline input-lg"  placeholder="Phone number" name="phone_no"  value="08023044870" required >
+          <div *ngIf="f.submitted && !phone_no.valid" class="help-block">Phone number is required</div>
+          
+        </div>
+  
+        <div class="form-group has-feedback" [ngClass]="{ 'has-error': f.submitted && !username.valid}">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            <input type="text" class="form-control  input-underline input-lg"  placeholder="Username" name="username"  value="daboss_beatz" disabled required >
+            <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
+          </div>
+        
+        
+        <div class="form-group has-feedback" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          <input type="password"  class="form-control input-underline input-lg"  placeholder="Password" name="password"  value="dv61215sa" disabled required>
+          <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+        </div>
+      </div>
+      
+      <button type="submit"  routerLink="/admin/update-profile" [disabled]="loading" class="btn btn-primary btn-outline btn-lg btn-rounded progress-login btn btn-primary btn-block btn-flat">Edit Profile</button>&nbsp;
+      <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+    
+    </form>
+  
+  </div>
