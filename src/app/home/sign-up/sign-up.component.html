@@ -1,0 +1,64 @@
+<div class="login-page">
+		<div class="row">
+			<div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
+				 
+				<h1>SIGN UP <small>to USAGO 2.0</small></h1>
+				<form role="form"  #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+						<input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="userService.selectedUser.$key">
+					<div class="form-content">
+						<div class="form-group has-feedback">
+							<span class="glyphicon glyphicon-user form-control-feedback"></span>
+							<input type="text" class="form-control input-underline input-lg"  placeholder="First Name" name="firstName" #firstName="ngModel" [(ngModel)]="userService.selectedUser.firstName"  required>
+							<!--<div *ngIf="userForm.submitted && !firstName.valid" class="help-block alert alert-danger">First Name is required</div>-->
+						</div>
+	
+						<div class="form-group has-feedback">
+							<span class="glyphicon glyphicon-user form-control-feedback"></span>
+							<input type="text" class="form-control input-underline input-lg"  placeholder="Last Name" name="lastName" #lastName="ngModel" [(ngModel)]="userService.selectedUser.lastName" required>
+							<!--<div *ngIf="userForm.submitted && !lastName.valid" class="help-block alert alert-danger">Last Name is required</div>-->
+						</div>
+						
+							<div class="form-group has-feedback" >
+							<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+							<input type="email" class="form-control input-underline input-lg" placeholder="Email address" name="email" #email="ngModel" [(ngModel)]="userService.selectedUser.email"  required>
+							<!--<div *ngIf="userForm.submitted && !email_no.valid" class="help-block alert alert-danger">Email is required</div>-->
+						</div>
+	
+						<div class="form-group has-feedback" >
+								<span class="glyphicon glyphicon-phone-alt form-control-feedback"></span>
+							<input type="text" class="form-control input-underline input-lg"  placeholder="Phone number" name="phone_no" #phone_no="ngModel" [(ngModel)]="userService.selectedUser.phone_no"  required >
+					<!--		<div *ngIf="userForm.submitted && !phone_no.valid" class="help-block alert alert-danger">Phone number is required</div>-->
+							
+						</div>
+	
+						<div class="form-group has-feedback" >
+								<span class="glyphicon glyphicon-user form-control-feedback"></span>
+								<input type="text" class="form-control input-underline input-lg"  placeholder="Username" name="username"  #username="ngModel" [(ngModel)]="userService.selectedUser.username"  required  >
+							<!--	<div *ngIf="userForm.submitted && !username.valid" class="help-block alert alert-danger">Username is required</div>-->
+							</div>
+						
+						
+						<div class="form-group has-feedback" >
+								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+							<input type="password" class="form-control input-underline input-lg"  placeholder="Password" name="password" #password="ngModel" [(ngModel)]="userService.selectedUser.password"   required>
+						<!--	<div *ngIf="userForm.submitted && !password.valid" class="help-block alert alert-danger">Password is required</div>-->
+						</div>
+					</div>
+					<div class="">
+							<div class="checkbox icheck">
+								<label>
+									<input type="checkbox" name="checkbox" required> I agree to the <a href="#">terms and conditions</a>
+								</label>
+							<!--	<div *ngIf="userForm.submitted && !checkbox.valid" class="help-block">You have to agree to our terms and condition to continue</div> -->
+							</div>
+						</div>
+				<!--	<button [disabled]="loading" class="btn btn-primary btn-outline btn-lg btn-rounded progress-login btn btn-primary btn-block btn-flat">Register</button>&nbsp;-->
+				<button [disabled]="!userForm.valid" class="btn btn-primary btn-outline btn-lg btn-rounded progress-login btn btn-primary btn-block btn-flat">Sign Up</button>
+					<!--<img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+					-->	
+				</form>
+			</div>	
+		</div>
+	</div>
+	
+	

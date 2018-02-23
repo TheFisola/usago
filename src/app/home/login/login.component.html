@@ -1,0 +1,28 @@
+<div class="login-page">
+	<div class="row">
+		<div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
+        
+			<h1>LOGIN <small>into your usago account</small></h1>
+			<form name="userform" method="post" #formCtrl="ngForm">
+
+				<div class="form-content">
+					<div class="form-group has-feedback" >
+						<input  class="form-control input-underline input-lg" type="email"  [(ngModel)]="user.email" name="email" placeholder="Email" required>
+					<!--	<div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>-->
+					</div>
+
+					<div class="form-group has-feedback"  >
+						<input  class="form-control input-underline input-lg" type="password"  [(ngModel)]="user.password" name="password" placeholder="Password" required >
+						<!--<div *ngIf="f.submitted && !username.valid" class="help-block">Password is required</div>-->
+					</div>
+				</div>
+      <!--FAKKKKKKKKKEEEEEE LOGIN TEST DONT FORGET TO REMOVE ROUTER LINK-->
+	  <button [disabled]="formCtrl.form.invalid" (click)="signInWithEmail()" class=" btn btn-primary btn-outline btn-lg btn-rounded btn-center">Login</button>
+	<!--  <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+	-->	
+			</form>
+
+		</div>	
+	</div>
+
+</div>
